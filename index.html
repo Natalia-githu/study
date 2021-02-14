@@ -17,8 +17,8 @@
         <div class="container header__wrapper">
             <div class="header__logo__wrapper">
                 <img class="header__logo" src="./img/logo.png" alt="logo" width="44" height="38">
-                <!-- <input type="text" class="search"> -->
-                <img src="./img/loupe.png" alt="loupe" width="27" height="28">
+                <input type="text" class="search">
+                <!-- <img src="./img/loupe.png" alt="loupe" width="27" height="28"> -->
             </div>
             <ul class="header__list">
                 <li><button class="header__button"><img src="./img/burger.png" alt="burger" width="32"
@@ -30,30 +30,36 @@
                             height="29"></button></li>
             </ul>
             <nav class="header__navigation">
-                <h2>Menu</h2>
+                <h2 class="header__navigation__menutext body">MENU</h2>
                 <ul>
                     <li>
-                        <h3>Text</h3>
+                        <h3 class="header__navigation__headertext body">MAN</h3>
                         <ul>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Accessories</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Bags</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Denim</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">T-Shirts</a></li>
                         </ul>
                     </li>
                     <li>
-                        <h3>Text</h3>
+                        <h3 class="header__navigation__headertext body">WOMAN</h3>
                         <ul>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Accessories</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Jackets & Coats</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Polos</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">T-Shirts</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Shirts</a></li>
                         </ul>
                     </li>
                     <li>
-                        <h3>Text</h3>
+                        <h3>KIDS</h3>
                         <ul>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Accessories</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Jackets & Coats</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Polos</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">T-Shirts</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Shirts</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Bags</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -62,8 +68,9 @@
     </header>
     <main class="main">
         <section class="intro">
-            <img src="./img/man.jpg" alt="man" width="801" height="764">
+            <img class="intro__img" src="./img/man.jpg" alt="man" width="801" height="764">
             <div class="intro__heading-wrapper">
+                <img class="img__pink" src="./img/pink.png" alt="pink">
                 <h1 class="intro__heading body">the brand <span class="intro__text">of luxerious <span
                             class="intro__pink">fashion</span></span>
                 </h1>
@@ -73,20 +80,40 @@
             <h2 class="visually-hidden">Stock</h2>
             <ul class="stock__list container">
                 <li class="stock__item stock__women">
-                    <!-- <h3> 30% off for women</h3>
-                    <p>text</p> -->
+                    <img class="stock__wall" src="./img/Rectangle20.png" alt="wall">
+                    <a href="#">
+                        <div class="stock__text">
+                            <h3 class="stock__text__header body">30% OFF</h3>
+                            <p class="stock__text__under__header body">FOR WOMEN</p>
+                        </div>
+                    </a>
                 </li>
                 <li class="stock__item stock__men">
-                    <!-- <h3>hot deal for men</h3>
-                    <p>text</p> -->
+                    <img class="stock__wall" src="./img/Rectangle20.png" alt="wall">
+                    <a href="#">
+                        <div class="stock__text">
+                            <h3 class="stock__text__header body">HOT DEAL</h3>
+                            <p class="stock__text__under__header body">FOR MEN</p>
+                        </div>
+                    </a>
                 </li>
                 <li class="stock__item stock__kids">
-                    <!-- <h3>new arrivals for kids</h3>
-                    <p>text</p> -->
+                    <img class="stock__wall" src="./img/Rectangle20.png" alt="wall">
+                    <a href="#">
+                        <div class="stock__text">
+                            <h3 class="stock__text__header body">NEW ARRIVALS</h3>
+                            <p class="stock__text__under__header body">FOR KIDS</p>
+                        </div>
+                    </a>
                 </li>
                 <li class="stock__item stock__accesories">
-                    <!-- <h3>luxirous & trendy accesories</h3>
-                    <p>text</p> -->
+                    <img class="stock__wall__accessories" src="./img/Rectangle20horiz.png" alt="wall">
+                    <a href="#">
+                        <div class="stock__text__accessories">
+                            <h3 class="stock__text__header body">LUXIROUS & TRENDY</h3>
+                            <p class="stock__text__under__header body">ACCESORIES</p>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -109,6 +136,7 @@
                 </li>
                 <li class="goods__item goods-suit">
                     <img class="img_suit" src="img/suit.jpg" alt="suit">
+                    <a href="#"><img class="img_addtoCart" src="./img/addtoCart.png" alt="cart"></a>
                     <h3 class="goods__item__heading body">ellery x m'o capsule</h3>
                     <p class="goods__item__text body">Known for her sculptural takes on traditional tailoring,
                         Australian
