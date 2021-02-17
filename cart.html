@@ -66,64 +66,59 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <section class="registration body">
-            <p class="container">registration</p>
+        <section class="shopping__cart body">
+            <p class="container">shopping cart</p>
         </section>
-        <form action="" class="container">
-            <ul class="registration__list">
-                <li class="registration__list__left">
-                    <legend class="registration__list__left__heading body">Your Name</legend>
-                    <input class="registration__list__left__name" type="name">
-                    <input class="registration__list__left__name" type="name">
-                    <div><input class="registration__list__left__checkbox" type="radio" id="contactChoice"
-                            name="contact"><label class="registration__list__left__checkbox body"
-                            for="contactChoice">Male
-                        </label>
-                        <input class="registration__list__left__checkbox" type="radio" id="contactChoice"
-                            name="contact"><label class="registration__list__left__checkbox body" for="contactChoice">
-                            Female
-                        </label>
-                    </div>
-                    <legend class="registration__list__left__login body">Login details</legend>
-                    <input class="registration__list__left__name" type=" email" required>
-                    <input class="registration__list__left__name" class=" form-password" type="password">
-                    <p class="registration__list__left__text body">Please use 8 or more characters, with at least 1
-                        number and a
-                        mixture
-                        of uppercase and
-                        lowercase
-                        letters</p>
-                    <button class="registration__list__left__button">
-                        <p class="registration__list__left__button__text body">JOIN NOW</p>
+        <section class="container main__cart">
+            <ul class="cart__list">
+                <li class="cart__list__item-1">
+                    <img src="./img/ti-shirt.jpg" alt="shorts" width="262" height="306">
+                    <img src="./img/rectangle-31.jpg" alt="wall-white" width="390" height="306">
+                </li>
+                <li class="cart__list__item-2">
+                    <img src="./img/red-t-shirt.jpg" alt="red-ti-shirt" width="262" height="306">
+                    <img src="./img/rectangle-31.jpg" alt="wall-white" width="390" height="306">
+                </li>
+                <li class="cart__list__item-3">
+                    <button>
+                        <p>clear shopping cart</p>
+                    </button>
+                    <button>
+                        <p>continue shopping</p>
                     </button>
                 </li>
-        </form>
-        <li class="registration__list__right">
-            <h2 class="registration__list__right__headiing body">loyalty has its perks</h2>
-            <p class="registration__list__right__text body">Get in on the loyalty program where you can earn
-                points and
-                unlock serious perks. Starting with
-                these as soon as you join:</p>
-            <ul class="list">
-                <li class="registration__list__right__item registration__list__right__text__item body">15% off
-                    welcome offer</li>
-                <li class="registration__list__right__item registration__list__right__text__item body">Free
-                    shipping, returns and
-                    exchanges on all orders
-                </li>
-                <li class="registration__list__right__item registration__list__right__text__item body">$10 off a
-                    purchase on your birthday
-                </li>
-                <li class="registration__list__right__item registration__list__right__text__item body">Early
-                    access to products</li>
-                <li class="registration__list__right__item registration__list__right__text__item body">Exclusive
-                    offers & rewards</li>
             </ul>
-        </li>
-        </ul>
+
+
+            <form action="" class="cart__info">
+
+                <legend class="legend__header body">shipping adress</legend>
+                <input class="input__box" type="name">
+                <input class="input__box" type="name">
+                <input class="input__box" type="name">
+
+                <button class="cart__info__botton">
+                    <p class="cart__info__botton__text body">get a quote</p>
+                </button>
+                <div>
+                    <p class="image__wall-grey__text-1 body">sub total $900</p>
+                    <p class="image__wall-grey__text-2 body">grand total <span
+                            class="image__wall-grey__text-2__into body">$900</span></p>
+                    <img class="image__wall-grey" src="./img/rectangle-29.jpg" alt="wall-grey">
+                    <button class="cart__info__botton-2">
+                        <p class="cart__info__botton-2__text body">proceed to checkout</p>
+                    </button>
+                    </li>
+                </div>
+            </form>
+        </section>
 
     </main>
+
+
+
     <footer class="footer">
         <section class="footer__cover">
             <ul class="footer__up container">
@@ -137,8 +132,8 @@
                 </li>
                 <li class="footer__up__block2">
                     <p class="footer__up__block2__text body"><span
-                            class="footer__up__block2__text_intro">SUBSCRIBE</span>
-                        FOR OUR NEWLETTER AND PROMOTION</p>
+                            class="footer__up__block2__text_intro">subscribe</span>
+                        for our newletter and promotion</p>
                     <a href="#" class="footer__up__block2_button"><img src="img/subscribe.png" alt="subscribe"></a>
                 </li>
             </ul>
@@ -157,6 +152,8 @@
             </ul>
         </section>
     </footer>
+
+
 </body>
 
 </html>
