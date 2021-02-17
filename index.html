@@ -17,43 +17,49 @@
         <div class="container header__wrapper">
             <div class="header__logo__wrapper">
                 <img class="header__logo" src="./img/logo.png" alt="logo" width="44" height="38">
-                <!-- <input type="text" class="search"> -->
                 <img src="./img/loupe.png" alt="loupe" width="27" height="28">
+                <input type="text" class="search">
             </div>
             <ul class="header__list">
                 <li><button class="header__button"><img src="./img/burger.png" alt="burger" width="32"
                             height="23"></button></li>
-                <li><a class="header__button" href="registration.html"><img src="./img/contact.png" alt="contact"
-                            width="29" height="29"></a>
+                <li><a class="header__button header__button__mobile" href="registration.html"><img
+                            src="./img/contact.png" alt="contact" width="29" height="29"></a>
                 </li>
-                <li><button class="header__button"><img src="./img/Cart.png" alt="basket" width="32"
-                            height="29"></button></li>
+                <li><button class="header__button header__button__mobile"><img src="./img/cart.png" alt="basket"
+                            width="32" height="29"></button></li>
             </ul>
             <nav class="header__navigation">
-                <h2>Menu</h2>
+                <h2 class="header__navigation__menutext body">menu</h2>
                 <ul>
                     <li>
-                        <h3>Text</h3>
+                        <h3 class="header__navigation__headertext body">man</h3>
                         <ul>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Accessories</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Bags</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Denim</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">T-Shirts</a></li>
                         </ul>
                     </li>
                     <li>
-                        <h3>Text</h3>
+                        <h3 class="header__navigation__headertext body">woman</h3>
                         <ul>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Accessories</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Jackets & Coats</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Polos</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">T-Shirts</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Shirts</a></li>
                         </ul>
                     </li>
                     <li>
-                        <h3>Text</h3>
+                        <h3 class="header__navigation__headertext body">kids</h3>
                         <ul>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Accessories</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Jackets & Coats</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Polos</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">T-Shirts</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Shirts</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Bags</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -62,8 +68,9 @@
     </header>
     <main class="main">
         <section class="intro">
-            <img src="./img/man.jpg" alt="man" width="801" height="764">
+            <img class="intro__img" src="./img/man.jpg" alt="man" width="801" height="764">
             <div class="intro__heading-wrapper">
+                <img class="img__pink" src="./img/pink.png" alt="pink">
                 <h1 class="intro__heading body">the brand <span class="intro__text">of luxerious <span
                             class="intro__pink">fashion</span></span>
                 </h1>
@@ -73,20 +80,41 @@
             <h2 class="visually-hidden">Stock</h2>
             <ul class="stock__list container">
                 <li class="stock__item stock__women">
-                    <!-- <h3> 30% off for women</h3>
-                    <p>text</p> -->
+                    <img class="stock__wall" src="./img/rectangle20.png" alt="wall">
+                    <a href="#">
+                        <div class="stock__text">
+                            <h3 class="stock__text__header body">30% off</h3>
+                            <p class="stock__text__under__header body">for women</p>
+                        </div>
+                    </a>
                 </li>
                 <li class="stock__item stock__men">
-                    <!-- <h3>hot deal for men</h3>
-                    <p>text</p> -->
+                    <img class="stock__wall" src="./img/rectangle20.png" alt="wall">
+                    <a href="#">
+                        <div class="stock__text">
+                            <h3 class="stock__text__header body">hot deal</h3>
+                            <p class="stock__text__under__header body">for men</p>
+                        </div>
+                    </a>
                 </li>
                 <li class="stock__item stock__kids">
-                    <!-- <h3>new arrivals for kids</h3>
-                    <p>text</p> -->
+                    <img class="stock__wall" src="./img/rectangle20.png" alt="wall">
+                    <a href="#">
+                        <div class="stock__text">
+                            <h3 class="stock__text__header body">new arrivals</h3>
+                            <p class="stock__text__under__header body">for kids</p>
+                        </div>
+                    </a>
                 </li>
-                <li class="stock__item stock__accesories">
-                    <!-- <h3>luxirous & trendy accesories</h3>
-                    <p>text</p> -->
+                <li class="stock__item stock__accesories stock__accesories__mobile">
+                    <img class="stock__wall__accessories" src="./img/rectangle20horiz.png" alt="wall">
+                    <img class="stock__wall__accessories__mobile" src="./img/cover-accessories-mobile.png" alt="wall">
+                    <a href="#">
+                        <div class="stock__text__accessories">
+                            <h3 class="stock__text__header body">luxirous & trendy</h3>
+                            <p class="stock__text__under__header body">accesories</p>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -109,6 +137,7 @@
                 </li>
                 <li class="goods__item goods-suit">
                     <img class="img_suit" src="img/suit.jpg" alt="suit">
+                    <a href="#"><img class="img_addtoCart" src="./img/addtoCart.png" alt="cart"></a>
                     <h3 class="goods__item__heading body">ellery x m'o capsule</h3>
                     <p class="goods__item__text body">Known for her sculptural takes on traditional tailoring,
                         Australian
@@ -210,8 +239,8 @@
                 </li>
                 <li class="footer__up__block2">
                     <p class="footer__up__block2__text body"><span
-                            class="footer__up__block2__text_intro">SUBSCRIBE</span>
-                        FOR OUR NEWLETTER AND PROMOTION</p>
+                            class="footer__up__block2__text_intro">subscribe</span>
+                        for our newletter and promotion</p>
                     <a href="#" class="footer__up__block2_button"><img src="img/subscribe.png" alt="subscribe"></a>
                 </li>
             </ul>
