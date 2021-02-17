@@ -15,45 +15,51 @@
     <header class="header">
         <div class="container header__wrapper">
             <div class="header__logo__wrapper">
-                <a href="index.html"><img class="header__logo" src="./img/logo.png" alt="logo" width="44"
+                <a href="index.html"> <img class="header__logo" src="./img/logo.png" alt="logo" width="44"
                         height="38"></a>
-                <!-- <input type="text" class="search"> -->
                 <img src="./img/loupe.png" alt="loupe" width="27" height="28">
+                <input type="text" class="search">
             </div>
             <ul class="header__list">
                 <li><button class="header__button"><img src="./img/burger.png" alt="burger" width="32"
                             height="23"></button></li>
-                <li><a class="header__button" href="registration.html"><img src="./img/contact.png" alt="contact"
-                            width="29" height="29"></a>
+                <li><a class="header__button header__button__mobile" href="registration.html"><img
+                            src="./img/contact.png" alt="contact" width="29" height="29"></a>
                 </li>
-                <li><button class="header__button"><img src="./img/Cart.png" alt="basket" width="32"
-                            height="29"></button></li>
+                <li><button class="header__button header__button__mobile"><img src="./img/cart.png" alt="basket"
+                            width="32" height="29"></button></li>
             </ul>
             <nav class="header__navigation">
-                <h2>Menu</h2>
+                <h2 class="header__navigation__menutext body">menu</h2>
                 <ul>
                     <li>
-                        <h3>Text</h3>
+                        <h3 class="header__navigation__headertext body">man</h3>
                         <ul>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Accessories</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Bags</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Denim</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">T-Shirts</a></li>
                         </ul>
                     </li>
                     <li>
-                        <h3>Text</h3>
+                        <h3 class="header__navigation__headertext body">woman</h3>
                         <ul>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Accessories</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Jackets & Coats</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Polos</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">T-Shirts</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Shirts</a></li>
                         </ul>
                     </li>
                     <li>
-                        <h3>Text</h3>
+                        <h3 class="header__navigation__headertext body">kids</h3>
                         <ul>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Accessories</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Jackets & Coats</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Polos</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">T-Shirts</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Shirts</a></li>
+                            <li><a class="header__navigation__goodstext body" href="#">Bags</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -62,58 +68,61 @@
     </header>
     <main>
         <section class="registration body">
-            <p class="container">REGISTRATION</p>
+            <p class="container">registration</p>
         </section>
-        <section class="container">
-            <ul class="registration__block">
-                <li class="block__left">
-                    <legend class="block__left__heading body">Your Name</legend>
-                    <input class="block__left__name" type="email">
-                    <input class="block__left__name" type="email">
-                    <input class="block__left__checkbox" type="radio" id="contactChoice" name="contact"><label
-                        class="block__left__checkbox body" for="contactChoice">Male
-                    </label>
-                    <input class="block__left__checkbox" type="radio" id="contactChoice" name="contact"><label
-                        class="block__left__checkbox body" for="contactChoice">
-                        Female
-                    </label>
-                    <legend class="block__left__login body">Login details</legend>
-                    <input class="block__left__name" type=" email" required>
-                    <input class="block__left__name" class=" form-password" type="password">
-                    <p class="block__left__text body">Please use 8 or more characters, with at least 1 number and a
+        <form class="container">
+            <ul class="registration__list">
+                <li class="registration__list__left">
+                    <legend class="registration__list__left__heading body">Your Name</legend>
+                    <input class="registration__list__left__name" type="name">
+                    <input class="registration__list__left__name" type="name">
+                    <div><input class="registration__list__left__checkbox" type="radio" id="contactChoice"
+                            name="contact"><label class="registration__list__left__checkbox body"
+                            for="contactChoice">Male
+                        </label>
+                        <input class="registration__list__left__checkbox" type="radio" id="contactChoice"
+                            name="contact"><label class="registration__list__left__checkbox body" for="contactChoice">
+                            Female
+                        </label>
+                    </div>
+                    <legend class="registration__list__left__login body">Login details</legend>
+                    <input class="registration__list__left__name" type=" email" required>
+                    <input class="registration__list__left__name" class=" form-password" type="password">
+                    <p class="registration__list__left__text body">Please use 8 or more characters, with at least 1
+                        number and a
                         mixture
                         of uppercase and
                         lowercase
                         letters</p>
-                    <a href="#"><button class="block__left__button">
-                            <p class="block__left__button__text body">JOIN NOW</p>
-                        </button></a>
+                    <button class="registration__list__left__button">
+                        <p class="registration__list__left__button__text body">JOIN NOW</p>
+                    </button>
                 </li>
-                <li class="block__right">
-                    <h2 class="block__right__headiing body">LOYALTY HAS ITS PERKS</h2>
-                    <p class="block__right__text body">Get in on the loyalty program where you can earn points and
+                <li class="registration__list__right">
+                    <h2 class="registration__list__right__headiing body">loyalty has its perks</h2>
+                    <p class="registration__list__right__text body">Get in on the loyalty program where you can earn
+                        points and
                         unlock serious perks. Starting with
                         these as soon as you join:</p>
                     <ul class="list">
-                        <li class="block__right__item block__right__text__item body">15% off welcome offer</li>
-                        <li class="block__right__item block__right__text__item body">Free shipping, returns and
+                        <li class="registration__list__right__item registration__list__right__text__item body">15% off
+                            welcome offer</li>
+                        <li class="registration__list__right__item registration__list__right__text__item body">Free
+                            shipping, returns and
                             exchanges on all orders
                         </li>
-                        <li class="block__right__item block__right__text__item body">$10 off a purchase on your birthday
+                        <li class="registration__list__right__item registration__list__right__text__item body">$10 off a
+                            purchase on your birthday
                         </li>
-                        <li class="block__right__item block__right__text__item body">Early access to products</li>
-                        <li class="block__right__item block__right__text__item body">Exclusive offers & rewards</li>
+                        <li class="registration__list__right__item registration__list__right__text__item body">Early
+                            access to products</li>
+                        <li class="registration__list__right__item registration__list__right__text__item body">Exclusive
+                            offers & rewards</li>
                     </ul>
                 </li>
             </ul>
-        </section>
+        </form>
     </main>
-
-
-
-
-
-
     <footer class="footer">
         <section class="footer__cover">
             <ul class="footer__up container">
