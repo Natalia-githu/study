@@ -3,20 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>catalog</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 
-<body>
 
+<body>
     <header class="header">
         <div class="container header__wrapper">
             <div class="header__logo__wrapper">
-                <a href="catalog.html"><img class="header__logo" src="./img/logo.png" alt="logo" width="44"
+                <a href="index.html"><img class="header__logo" src="./img/logo.png" alt="logo" width="44"
                         height="38"></a>
                 <img src="./img/loupe.png" alt="loupe" width="27" height="28">
                 <input type="text" class="search">
@@ -67,66 +68,91 @@
             </nav>
         </div>
     </header>
-    <main class="main">
-        <section class="intro">
-            <img class="intro__img" src="./img/man.jpg" alt="man" width="801" height="764">
-            <div class="intro__heading-wrapper">
-                <img class="img__pink" src="./img/pink.png" alt="pink">
-                <h1 class="intro__heading body">the brand <span class="intro__text">of luxerious <span
-                            class="intro__pink">fashion</span></span>
-                </h1>
-            </div>
-        </section>
-        <section class="stock">
-            <h2 class="visually-hidden">Stock</h2>
-            <ul class="stock__list container">
-                <li class="stock__item stock__women">
-                    <img class="stock__wall" src="./img/rectangle20.png" alt="wall">
-                    <a href="#">
-                        <div class="stock__text">
-                            <h3 class="stock__text__header body">30% off</h3>
-                            <p class="stock__text__under__header body">for women</p>
-                        </div>
-                    </a>
+
+    <main>
+        <section class="new__arrivals">
+            <ul class="container new__arrivals-list">
+                <li>
+                    <p class="new__arrivals-text body">new arrivals</p>
                 </li>
-                <li class="stock__item stock__men">
-                    <img class="stock__wall" src="./img/rectangle20.png" alt="wall">
-                    <a href="#">
-                        <div class="stock__text">
-                            <h3 class="stock__text__header body">hot deal</h3>
-                            <p class="stock__text__under__header body">for men</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="stock__item stock__kids">
-                    <img class="stock__wall" src="./img/rectangle20.png" alt="wall">
-                    <a href="#">
-                        <div class="stock__text">
-                            <h3 class="stock__text__header body">new arrivals</h3>
-                            <p class="stock__text__under__header body">for kids</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="stock__item stock__accesories stock__accesories__mobile">
-                    <img class="stock__wall__accessories" src="./img/rectangle20horiz.png" alt="wall">
-                    <img class="stock__wall__accessories__mobile" src="./img/cover-accessories-mobile.png" alt="wall">
-                    <a href="#">
-                        <div class="stock__text__accessories">
-                            <h3 class="stock__text__header body">luxirous & trendy</h3>
-                            <p class="stock__text__under__header body">accesories</p>
-                        </div>
-                    </a>
+                <li>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item body"><a href="#">home/</a></li>
+                            <li class="breadcrumb-item body"><a href="#">men/</a></li>
+                            <li class="breadcrumb-item body active" aria-current="page">new arrivals</li>
+                        </ol>
+                    </nav>
                 </li>
             </ul>
         </section>
+        <section>
+            <ul class="container dropdown">
+                <li class="nav-item-1 dropdown">
+                    <p class="nav-link dropdown-toggle body">
+                        <span class="nav-link-intro">filter</span>
+                    </p>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#"><img class="filter__img" src="./img/filter.png"
+                                    alt="filter" width="15" height="10"></a>
+                            <ul class="filter">
+                                <h3 class="header__navigation__headertext body">category</h3>
+                                <li> <a href="#">Accessories</a>
+                                </li>
+                                <li><a href="#">Bags</a> </li>
+                                <li> <a href="#">Denim</a>
+                                </li>
+                                <li><a href="#">Hoodies & Sweatshirts</a> </li>
+                                <li><a href="#">Jackets & Coats</a> </li>
+                                <li><a href="#">Shirt</a> </li>
+                                <li><a href="#">Shoes</a> </li>
+                                <li><a href="#">Sweaters & Knits</a> </li>
+                                <li><a href="#">T-Shirts</a> </li>
+                                <li><a href="#">Tanks</a> </li>
+                                <h3 class="header__navigation__headertext body">brand</h3>
+                                <h3 class="header__navigation__headertext body">designer</h3>
+                            </ul>
+                        </li>
+                    </ul>
+                <li class="nav-item-2 dropdown">
+                    <p class="nav-link dropdown-toggle body">
+                        trending now
+                    </p>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#"><img src="./img/dropdown.png" alt="dropdown" width="11"
+                                    height="6"></a>
+                        </li>
+                    </ul>
+                    <p class="nav-link dropdown-toggle body">
+                        size
+                    </p>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#"><img src="./img/dropdown.png" alt="dropdown" width="11"
+                                    height="6"></a>
+                            <ul class="size">
+                                <li><img src="./img/box.png" alt="box"> XS</li>
+                                <li><img src="./img/box.png" alt="box"> S</li>
+                                <li><img src="./img/box.png" alt="box"> M</li>
+                                <li><img src="./img/box.png" alt="box"> L</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="nav-link dropdown-toggle body">
+                        price
+                    </p>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#"><img src="./img/dropdown.png" alt="dropdown" width="11"
+                                    height="6"></a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </section>
         <section class="goods">
-            <div class="goods__block">
-                <h2 class="goods__header body">Fetured Items</h2>
-                <p class="goods__text body">Shop for items based on what we featured in this week</p>
-            </div>
             <ul class="goods__list container">
                 <li class="goods__item goods__item-list">
-                    <img src="img/jacket.jpg" alt="jaсket">
+                    <img class="goods__item-img" src="img/jacket.jpg" alt="jaсket">
                     <h3 class="goods__item__heading body">ellery x m'o
                         capsule</h3>
                     <p class="goods__item__text body">Known for her sculptural takes on traditional tailoring,
@@ -137,8 +163,8 @@
                     <p class="intro__pink body">$52.00</p>
                 </li>
                 <li class="goods__item goods__item-list">
-                    <img class="img_suit" src="img/suit.jpg" alt="suit">
-                    <a href="#"><img class="img_addtoCart" src="./img/addtoCart.png" alt="cart"></a>
+                    <img class="goods__item-img" src="img/red-t-shirt.jpg" alt="red-t-shirt" width="360" height="420">
+                    <!-- <a href="#"><img class="img_addtoCart" src="./img/addtoCart.png" alt="cart"></a> -->
                     <h3 class="goods__item__heading body">ellery x m'o capsule</h3>
                     <p class="goods__item__text body">Known for her sculptural takes on traditional tailoring,
                         Australian
@@ -149,7 +175,7 @@
                     <p></p>
                 </li>
                 <li class="goods__item goods__item-list">
-                    <img src="img/shorts.jpg" alt="shorts">
+                    <img class="goods__item-img" src="img/shorts.jpg" alt="shorts">
                     <h3 class="goods__item__heading body">ellery x m'o capsule</h3>
                     <p class="goods__item__text body">Known for her sculptural takes on traditional tailoring,
                         Australian
@@ -160,7 +186,7 @@
                     <p></p>
                 </li>
                 <li class="goods__item goods__item-list">
-                    <img src="img/shirt.png" alt="shirt">
+                    <img class="goods__item-img" src="img/shirt.png" alt="shirt">
                     <h3 class="goods__item__heading body">ellery x m'o capsule</h3>
                     <p class="goods__item__text body">Known for her sculptural takes on traditional tailoring,
                         Australian
@@ -171,7 +197,7 @@
                     <p></p>
                 </li>
                 <li class="goods__item goods__item-list">
-                    <img src="img/blue-blazer.jpg" alt="blue blazer">
+                    <img class="goods__item-img" src="img/white-t-shirt.png" alt="white-t-shirt">
                     <h3 class="goods__item__heading body">ellery x m'o capsule</h3>
                     <p class="goods__item__text body">Known for her sculptural takes on traditional tailoring,
                         Australian
@@ -182,7 +208,40 @@
                     <p></p>
                 </li>
                 <li class="goods__item goods__item-list">
-                    <img src="img/green-blazer.jpg" alt="green blazer">
+                    <img class="goods__item-img" src="img/blue-cap.png" alt="blue-cap">
+                    <h3 class="goods__item__heading body">ellery x m'o capsule</h3>
+                    <p class="goods__item__text body">Known for her sculptural takes on traditional tailoring,
+                        Australian
+                        arbiter of cool Kym
+                        Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="intro__pink body">$52.00</p>
+                    <p></p>
+                </li>
+                <li class="goods__item goods__item-list">
+                    <img class="goods__item-img" src="img/white-shirt.png" alt="white-shirt">
+                    <h3 class="goods__item__heading body">ellery x m'o capsule</h3>
+                    <p class="goods__item__text body">Known for her sculptural takes on traditional tailoring,
+                        Australian
+                        arbiter of cool Kym
+                        Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="intro__pink body">$52.00</p>
+                    <p></p>
+                </li>
+                <li class="goods__item goods__item-list">
+                    <img class="goods__item-img" src="img/black-jacket.png" alt="black-jacket">
+                    <h3 class="goods__item__heading body">ellery x m'o capsule</h3>
+                    <p class="goods__item__text body">Known for her sculptural takes on traditional tailoring,
+                        Australian
+                        arbiter of cool Kym
+                        Ellery
+                        teams up with Moda Operandi.</p>
+                    <p class="intro__pink body">$52.00</p>
+                    <p></p>
+                </li>
+                <li class="goods__item goods__item-list">
+                    <img class="goods__item-img" src="img/hakki-t-shirt.png" alt="hakki-t-shirt">
                     <h3 class="goods__item__heading body">ellery x m'o capsule</h3>
                     <p class="goods__item__text body">Known for her sculptural takes on traditional tailoring,
                         Australian
@@ -194,7 +253,30 @@
                 </li>
             </ul>
         </section>
-        <div class="goods__button container"><a href="#"><img src="img/browse_all_product.png" alt=""></a></div>
+        <nav class="container" aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <img src="./img/row-1.png" alt="row"><span class="pagination__next"
+                            aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link body" href="#">1</a></li>
+                <li class="page-item"><a class="page-link body" href="#">2</a></li>
+                <li class="page-item"><a class="page-link body" href="#">3</a></li>
+                <li class="page-item"><a class="page-link body" href="#">4</a></li>
+                <li class="page-item"><a class="page-link body" href="#">5</a></li>
+                <li class="page-item"><a class="page-link body" href="#">6</a></li>
+                <li class="page-item"><a class="page-link body" href="#">...</a></li>
+                <li class="page-item"><a class="page-link body" href="#">20</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <img src="./img/row-2.png" alt="row"> <span class="pagination__next"
+                            aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <div class="main__block__down">
             <section class="container">
                 <ul class="main__block__infa">
@@ -226,7 +308,10 @@
                 </ul>
             </section>
         </div>
+
+
     </main>
+
     <footer class="footer">
         <section class="footer__cover">
             <ul class="footer__up container">
@@ -260,6 +345,7 @@
             </ul>
         </section>
     </footer>
+
 </body>
 
 </html>
