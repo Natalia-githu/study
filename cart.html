@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registration</title>
+    <title>cart</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,7 +15,7 @@
     <header class="header">
         <div class="container header__wrapper">
             <div class="header__logo__wrapper">
-                <a href="index.html"><img class="header__logo" src="./img/logo.png" alt="logo" width="44"
+                <a href="index.html"> <img class="header__logo" src="./img/logo.png" alt="logo" width="44"
                         height="38"></a>
                 <img src="./img/loupe.png" alt="loupe" width="27" height="28">
                 <input type="text" class="search">
@@ -66,68 +66,76 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <section class="registration body">
-            <p class="container">registration</p>
+        <section class="shopping__cart body">
+            <p class="container">shopping cart</p>
         </section>
-        <form action="" class="container">
-            <ul class="registration__list">
-                <li class="registration__list__left">
-                    <legend class="registration__list__left__heading body">Your Name</legend>
-                    <input class="registration__list__left__name registration__list-left-text body" type="name"
-                        placeholder="First Name">
-                    <input class="registration__list__left__name registration__list-left-text body" type="name"
-                        placeholder="Last Name">
-                    <div><input class="registration__list__left__checkbox" type="radio" id="contactChoice"
-                            name="contact"><label class="registration__list__left__checkbox body"
-                            for="contactChoice">Male
-                        </label>
-                        <input class="registration__list__left__checkbox" type="radio" id="contactChoice"
-                            name="contact"><label class="registration__list__left__checkbox body" for="contactChoice">
-                            Female
-                        </label>
+        <section class="container main__cart">
+            <ul class="cart__list">
+                <li class="cart__list-item-1"> <img class="cart__list-image" src="./img/ti-shirt.jpg" alt="shorts">
+                    <div class="cart__list-item-intro">
+                        <h2 class="cart__list-item-header body">mango people t-shirt</h2>
+                        <p class="cart__list-item-text body">Price: <span class="cart__list-item-text-intro">$300</span>
+                        </p>
+                        <p class="cart__list-item-text body">Color: Red</p>
+                        <p class="cart__list-item-text body">Size: Xl</p>
+                        <p class="cart__list-item-text body">Quantity:</p>
+                        <img class="cart__list-item-image" src="./img/vector-cart.png" alt="cross">
+                        <img class="cart__list-item-box" src="./img/rectangle-28.png" alt="box-number">
                     </div>
-                    <legend class="registration__list__left__login body">Login details</legend>
-                    <input class="registration__list__left__name registration__list-left-text body" type=" email"
-                        required placeholder="Email">
-                    <input class="registration__list__left__name registration__list-left-text body"
-                        class=" form-password" type="password" placeholder="Password">
-                    <p class="registration__list__left__text body">Please use 8 or more characters, with at least 1
-                        number and a
-                        mixture
-                        of uppercase and
-                        lowercase
-                        letters</p>
-                    <button class="registration__list__left__button">
-                        <p class="registration__list__left__button__text body">JOIN NOW</p>
+                </li>
+                <li class="cart__list-item-2"> <img class="cart__list-image" src="./img/red-t-shirt.jpg"
+                        alt="red=t-shirt">
+                    <div class="cart__list-item-intro">
+                        <h2 class="cart__list-item-header body">mango people t-shirt</h2>
+                        <p class="cart__list-item-text body">Price: <span class="cart__list-item-text-intro">$300</span>
+                        </p>
+                        <p class="cart__list-item-text body">Color: Red</p>
+                        <p class="cart__list-item-text body">Size: Xl</p>
+                        <p class="cart__list-item-text body">Quantity:</p>
+                        <img class="cart__list-item-image" src="./img/vector-cart.png" alt="cross">
+                        <img class="cart__list-item-box" src="./img/rectangle-28.png" alt="box-number">
+                    </div>
+                </li>
+                <li class="cart__list-item-3">
+                    <button class="cart__list-button">
+                        <p class="cart__list-text body">Clear shopping cart</p>
+                    </button>
+                    <button class="cart__list-button">
+                        <p class="cart__list-text body">Continue shopping</p>
                     </button>
                 </li>
-        </form>
-        <li class="registration__list__right">
-            <h2 class="registration__list__right__headiing body">loyalty has its perks</h2>
-            <p class="registration__list__right__text body">Get in on the loyalty program where you can earn
-                points and
-                unlock serious perks. Starting with
-                these as soon as you join:</p>
-            <ul class="list">
-                <li class="registration__list__right__item registration__list__right__text__item body">15% off
-                    welcome offer</li>
-                <li class="registration__list__right__item registration__list__right__text__item body">Free
-                    shipping, returns and
-                    exchanges on all orders
-                </li>
-                <li class="registration__list__right__item registration__list__right__text__item body">$10 off a
-                    purchase on your birthday
-                </li>
-                <li class="registration__list__right__item registration__list__right__text__item body">Early
-                    access to products</li>
-                <li class="registration__list__right__item registration__list__right__text__item body">Exclusive
-                    offers & rewards</li>
             </ul>
-        </li>
-        </ul>
+
+
+            <form action="" class="cart__info">
+                <ul class="cart__info-list ">
+                    <div class="cart__info-item">
+                        <legend class="legend__header body">shipping adress</legend>
+                        <input class="input__box input__box-text body" type="name" placeholder="Bangladesh">
+                        <input class="input__box input__box-text body" type="name" placeholder="State">
+                        <input class="input__box input__box-text body" type="name" placeholder="Postcode / Zip">
+                        <button class="cart__info-botton">
+                            <p class="cart__info-botton-text body">Get a quote</p>
+                        </button>
+                    </div>
+                    <div class="cart__info-item-3">
+                        <p class="image__wall-grey-text-1 body">sub total $900</p>
+                        <p class="image__wall-grey-text-2 body">grand total <span
+                                class="image__wall-grey-text-2-into body">$900</span></p>
+                        <button class="cart__info-botton-2">
+                            <p class="cart__info-botton-2-text body">proceed to checkout</p>
+                        </button>
+                    </div>
+                </ul>
+            </form>
+        </section>
 
     </main>
+
+
+
     <footer class="footer">
         <section class="footer__cover">
             <ul class="footer__up container">
@@ -141,8 +149,8 @@
                 </li>
                 <li class="footer__up__block2">
                     <p class="footer__up__block2__text body"><span
-                            class="footer__up__block2__text_intro">SUBSCRIBE</span>
-                        FOR OUR NEWLETTER AND PROMOTION</p>
+                            class="footer__up__block2__text_intro">subscribe</span>
+                        for our newletter and promotion</p>
                     <a href="#" class="footer__up__block2_button"><img src="img/subscribe.png" alt="subscribe"></a>
                 </li>
             </ul>
@@ -161,6 +169,8 @@
             </ul>
         </section>
     </footer>
+
+
 </body>
 
 </html>
